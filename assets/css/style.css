@@ -1,0 +1,660 @@
+/* font-family: 'Roboto',sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* dosis */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Raleway',sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+--main-color:#ff724c;
+
+}
+body{
+    font-family:font-family: 'Roboto', sans-serif;
+
+}
+h1,
+h2 {
+    font-family: "Dosis", sans-serif;
+}
+
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+/* .container{
+max-width: 1140px !important;
+} */
+
+@media (min-width: 1400px) {.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl{ 
+    max-width: 1140px;
+}
+}
+.bg-main-color{
+background-color: var(--main-color);
+}
+.text-main-color{
+    color: var(--main-color);
+}
+.border-main-color {
+    border-color: var(--main-color) !important;
+}
+
+.buttn:hover i{
+    transform: rotate(360deg);
+    background-color: #333 !important;
+    color: white !important;
+}
+.buttn i{
+    transition: 0.5s;
+}
+
+
+.navbar .nav-link{
+    padding-block: 10px;
+    position: relative;
+}
+
+.navbar .nav-link::after{
+content:'';
+position: absolute;
+bottom: 0;
+left:0;
+height: 2px;
+width: 0%;
+background-color: var(--main-color);
+
+}
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar .nav-link:hover::after{
+transition: 0.5s;
+    width: 100%;
+}
+
+.header {
+    background-image: url("../img/man.jpg");
+    background-size: cover;
+    background-position-y: -90px;
+    background-repeat: no-repeat;
+}
+
+.header p,
+.header span {
+    font-family: "Raleway", sans-serif;
+    font-size: 23px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header .icons i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0, 5s;
+}
+
+.header .icons i:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.header .icons i:nth-of-type(1) {
+    color: #3b5999;
+    border-color: #3b5999;
+}
+
+.header .icons i:nth-of-type(1):hover {
+    color: #3b5999;
+    border-color: white;
+}
+
+.header .icons i:nth-of-type(2) {
+    color: #ea4c89;
+    border-color: #ea4c89;
+}
+
+.header .icons i:nth-of-type(2):hover {
+    color: #ea4c89;
+    border-color: white;
+}
+
+.header .icons i:nth-of-type(3) {
+    color: #1769ff;
+    border-color: #1769ff;
+}
+
+.header .icons i:nth-of-type(3):hover {
+    color: #1769ff;
+    border-color: white;
+}
+
+.header .icons i:nth-of-type(4) {
+    color: #0077b5;
+    border-color: #0077b5;
+}
+
+.header .icons i:nth-of-type(4):hover {
+    color: #0077b5;
+    border-color: white;
+}
+
+.header .icons i:nth-of-type(5) {
+    color: #dd4b39;
+    border-color: #dd4b39;
+}
+
+.header .icons i:nth-of-type(5):hover {
+    color: #dd4b39;
+    border-color: white;
+}
+
+.header-content p {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #3333;
+    animation: typing 3s infinite alternate-reverse steps(27) , blink 0.5s infinite;
+    -webkit-animation:typing 3s infinite alternate-reverse steps(27) ,blink 0.7s infinite ;
+   }
+@keyframes typing {
+    form {
+        width: 0;
+    }
+
+    to {
+        width: 314px;
+    }
+}
+
+@keyframes blink {
+    form {
+       border-color: #333333de;
+    }
+
+    to {
+        border-color: #33333310;
+    }
+}
+
+
+/* Star about */
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.custom-btn:hover i {
+    color: var(--main-color) !important;
+}
+.about .container>.row {
+    width: 90%;
+    margin: auto;
+}
+.numbers {
+    background-color: #4e4e4e;
+}
+.number {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: rgb(243, 243, 243);
+}
+
+.about-p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(243, 243, 243);
+}
+.about-port {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: rgb(59, 59, 59);
+}
+
+
+/* Star Services */
+.services .service-item {
+    position: relative;
+}
+
+.services .service-item::after {
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    z-index: -1;
+    height: 0%;
+    transition: 0.6s;
+}
+
+.services .service-item:hover::after {
+    height: 100%;
+}
+
+.services .service-item p {
+    font-size: 14px;
+    color: rgb(129, 129, 129);
+}
+
+.services .service-item h3 {
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+}
+
+/* Star portfolio */
+.portfolio {
+    background-color: #f3f3f3;
+}
+
+.portfolio .nav-link {
+    font-size: 13px;
+    font-family: "Raleway", sans-serif;
+    color: rgb(95, 95, 95);
+}
+
+.portfolio .nav-link.active {
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+
+.portfolio-card:hover .overlay {
+    transform: scaleY(1);
+}
+
+.overlay i {
+    transform: scale(0);
+    transition: 0.5s 0.1s;
+    cursor: pointer;
+}
+
+.portfolio-card:hover .overlay i {
+    transform: scale(1) rotate(360deg);
+   }
+
+.overlay i:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: var(--main-color) !important;
+}
+
+.portfolio-card .info {
+    bottom: 40px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.portfolio-card:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* Star Resume */
+.resume .head i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.resume .head i:hover {
+    background-color: #f3f3f3;
+    color: var(--main-color) !important;
+}
+
+.resume .head {
+    position: relative;
+}
+
+.resume .head::before,
+.resume .item:not(:last-of-type)::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #333;
+    top: 25px;
+    left: 18px;
+    z-index: -1;
+}
+
+.resume .item:not(.item.special)::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background-color: white;
+}
+
+.resume .item:hover::after {
+    background-color: var(--main-color) !important;
+}
+
+.resume .item:not(.item.special):hover::after {
+    background-color: var(--main-color);
+}
+
+.bar {
+    height: 5px;
+    background-color: #333;
+    position: relative;
+}
+
+.bar::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    width: 80%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.item[percentage="80%"] h4 {
+    width: 80%;
+}
+
+.item[percentage="80%"] .bar::after {
+    width: 80%;
+}
+
+.item[percentage="70%"] h4 {
+    width: 70%;
+}
+
+.item[percentage="70%"] .bar::after {
+    width: 70%;
+}
+
+.item[percentage="55%"] h4 {
+    width: 55%;
+}
+
+.item[percentage="55%"] .bar::after {
+    width: 55%;
+}
+
+
+/* Star download-resume */
+.download-resume {
+    background: linear-gradient(rgba(59, 59, 59, 0.75), rgba(59, 59, 59, 0.75)),
+        url("../img/brandbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.download-resume p {
+    font-family: "Dosis", sans-serif;
+    font-size: 32px;
+}
+
+.download-resume a {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    transition: 0.4s;
+}
+
+.download-resume a:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color) !important;
+}
+
+.testimonials .qoute span {
+    color: #5b5b5b;
+    font-size: 14px;
+}
+
+.testimonials .qoute i {
+    font-size: 20px;
+}
+
+.testimonials .qoute:hover {
+    background-color: #5b5b5b;
+    color: white;
+}
+
+.testimonials .qoute:hover span {
+    color: white;
+}
+
+.carousel-indicators {
+    bottom: -100px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: var(--main-color);
+}
+
+/* Star contact */
+.contact {
+    background: linear-gradient(rgb(255, 114, 76, 0.85), rgb(255, 114, 76, 0.85)),
+        url("../img/contactbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border: 1px solid white !important;
+    box-shadow: none;
+}
+
+.contact input::placeholder,
+.contact textarea:focus {
+    color: white;
+}
+/* Star Map */
+.contact-info .container {
+    background-color: #282828;
+}
+
+.contact-info i {
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    background-color: #f3f3f3;
+    font-size: 12px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s transform, 0.4s color;
+}
+
+.contact-info i:hover {
+    color: white;
+    background-color: var(--main-color);
+    transform: rotate(360deg);
+}
+
+footer {
+    background-color: white;
+}
+
+footer p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #818181;
+}
+
+/* Star Media */
+
+@media screen and (max-width: 991px) {
+    .nav-item {
+        width: fit-content;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .about .number {
+        border: none !important;
+    }
+
+    .download-resume .brands {
+        justify-content: center !important;
+    }
+
+    .download-resume .download {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    header {
+        background-position-x: -235px;
+    }
+
+    .header-content {
+        align-items: start !important;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .contact p,
+    .contact form {
+        width: 100% !important;
+    }
+}
+textarea.form-control::placeholder{
+    color: white;
+
+}
+/* .osama{
+
+    animation: FCOLOR 1s infinite alternate-reverse;
+-webkit-animation:FCOLOR 1s infinite alternate-reverse;
+} */
+
+@keyframes FCOLOR {
+ 
+    form
+{
+    color: var(--main-color);
+font-weight: 600;
+}
+
+to{
+    color: #fb5e32ad;
+    font-weight: 500;
+}
+
+}
+@keyframes blink {
+    form {
+        border-color: #333333de;
+    }
+
+    to {
+        border-color: #33333310;
+    }
+}
+.loader {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+    animation: smokeOut 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 1px var(--main-color);
+    -webkit-animation: smokeOut 1s ease-in-out infinite alternate;
+}
+
+.loader:before {
+    content: "Loading";
+}
+
+@keyframes smokeOut {
+    100% {
+        opacity: 0.08;
+        filter: blur(5px);
+        letter-spacing: 4px;
+    }
+}
+
+.loading {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+/* end loading */
+
+/* start scroll-top */
+.scroll-to-top {
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.navbar {
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
